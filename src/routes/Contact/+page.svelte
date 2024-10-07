@@ -4,7 +4,7 @@
 
 <h1>Contact Page</h1>
 <nav>
-    <a href="/">+page</a> | 
+    <a href="/">Home</a> | 
     <a href="/About me">About me</a> | 
     <a href="/Portfolio">Portfolio</a>
 </nav>
