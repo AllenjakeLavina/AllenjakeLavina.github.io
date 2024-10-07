@@ -2,7 +2,10 @@
     import { Alert } from "flowbite-svelte"
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-<Alert color="primary">Test</Alert>
+<h1>Home Page</h1>
+<nav>
+    <a href="About me">About me</a> | 
+    <a href="/Contact">Contact</a> | 
+    <a href="/Portfolio">Portfolio</a>
+</nav>
+<p>Welcome to the Home page!</p>
