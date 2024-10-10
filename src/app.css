@@ -2,36 +2,69 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
-/* src/app.css */
-
 /* Global styles */
 body {
-    font-family: 'Outfit', sans-serif; /* Set a default font */
+    font-family: 'Outfit', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2080df; /* Light gray background */
-    color: #374151; /* Dark gray text color */
+    background-color: #2080df;
+    color: #374151;
 }
 
-/* Custom styles for headers */
 h1 {
-    font-size: 2rem; /* Set a larger font size for h1 */
-    color: #1f2937; /* Darker shade for h1 */
+    font-size: 2rem;
+    color: #1f2937;
 }
 
 h2 {
-    font-size: 1.5rem; /* Medium font size for h2 */
-    color: #4b5563; /* Slightly lighter shade for h2 */
+    font-size: 1.5rem;
+    color: #4b5563;
 }
 
-/* Custom button styles */
+/* Links without underline */
+a {
+    @apply text-blue-500 hover:text-blue-700 transition-colors duration-300;
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Button styles */
 .button {
-    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded; /* Tailwind CSS classes */
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out;
 }
 
 .button:hover {
-    @apply bg-blue-700; /* Darker shade on hover */
+    @apply bg-blue-700 shadow-lg transform scale-105;
 }
 
-/* Add any other styles you want to apply globally */
+.button:active {
+    @apply bg-blue-900 transform scale-95;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to right, #2563eb, #3b82f6);
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+/* Navbar styles */
+nav a {
+    @apply font-semibold text-lg text-white hover:text-yellow-300 transition duration-300 px-4 py-2 rounded-lg;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Footer styles */
+footer {
+    @apply bg-blue-600 text-white py-4 text-center;
+    border-top: 2px solid #3b82f6;
+    font-size: 0.875rem;
+}
