@@ -25,24 +25,9 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Project 1 -->
         <div class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-            <img src="your-image-url-1.jpg" alt="Project One" class="w-full h-48 object-cover rounded-md mb-4">
+            <img src="images/Project1.png" alt="Project One" class="w-full h-48 object-cover rounded-md mb-4">
             <h3 class="text-2xl font-bold mb-2">Project One</h3>
             <p class="text-gray-600 mb-4">A brief description of Project One goes here. It highlights the main features and technologies used.</p>
-            <a href="https://example.com/project-one" class="text-blue-500 hover:text-blue-700 font-semibold">View Project</a>
-        </div>
-        <!-- Project 2 -->
-        <div class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-            <img src="your-image-url-2.jpg" alt="Project Two" class="w-full h-48 object-cover rounded-md mb-4">
-            <h3 class="text-2xl font-bold mb-2">Project Two</h3>
-            <p class="text-gray-600 mb-4">A brief description of Project Two goes here. This project involves different technologies and approaches.</p>
-            <a href="https://example.com/project-two" class="text-blue-500 hover:text-blue-700 font-semibold">View Project</a>
-        </div>
-        <!-- Project 3 -->
-        <div class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-            <img src="your-image-url-3.jpg" alt="Project Three" class="w-full h-48 object-cover rounded-md mb-4">
-            <h3 class="text-2xl font-bold mb-2">Project Three</h3>
-            <p class="text-gray-600 mb-4">A brief description of Project Three goes here. Explain the problem it solves or the goals it achieves.</p>
-            <a href="https://example.com/project-three" class="text-blue-500 hover:text-blue-700 font-semibold">View Project</a>
         </div>
     </div>
 </section>
