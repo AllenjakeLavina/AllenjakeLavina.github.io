@@ -26,8 +26,20 @@
         <!-- Project 1 -->
         <div class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
             <img src="images/Project1.png" alt="Project One" class="w-full h-48 object-cover rounded-md mb-4">
-            <h3 class="text-2xl font-bold mb-2">Project One</h3>
-            <p class="text-gray-600 mb-4">A brief description of Project One goes here. It highlights the main features and technologies used.</p>
+            <h3 class="text-2xl font-bold mb-2">Portfolio/Midterm Project</h3>
+            <p class="text-gray-600 mb-4">HTML & CSS</p>
+        </div>
+        <!-- Project 2-->
+        <div class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+            <img src="images/Project2.png" alt="Project Two" class="w-full h-48 object-cover rounded-md mb-4">
+            <h3 class="text-2xl font-bold mb-2">Weather App</h3>
+            <p class="text-gray-600 mb-4">Angular</p>
+        </div>
+        <!-- Project 3-->
+        <div class="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+            <img src="images/Project3.png" alt="Project Three" class="w-full h-48 object-cover rounded-md mb-4">
+            <h3 class="text-2xl font-bold mb-2">Appointment System</h3>
+            <p class="text-gray-600 mb-4">Angular Project</p>
         </div>
     </div>
 </section>
