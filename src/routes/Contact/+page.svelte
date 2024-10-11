@@ -42,6 +42,6 @@
     </main>
 
     <footer class="bg-blue-600 p-4 rounded-lg shadow-md mt-10">
-        <p class="text-center text-white text-sm">© 2024 Your Name. All rights reserved.</p>
+        <p class="text-center text-white text-sm">© 2024 Allen Jake Lavina. All rights reserved.</p>
     </footer>
 </div>
