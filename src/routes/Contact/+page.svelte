@@ -10,38 +10,180 @@
 </svelte:head>
 
 <div class="min-h-screen flex flex-col">
-    <header class="bg-gradient-to-r from-blue-600 to-blue-400 p-6 rounded-lg shadow-lg mb-8 flex items-center justify-between">
+    <header>
         <div class="flex items-center">
             <img src="images/allen.jpg" alt="Logo" class="h-12 w-12 mr-4 rounded-full border-2 border-white shadow-lg transition-transform duration-300 transform hover:scale-110"> <!-- Enhanced Logo -->
-            <nav class="flex space-x-12"> <!-- Increased space between links -->
-                <a href="/" class="text-white font-semibold text-lg tracking-wider hover:bg-blue-700 hover:shadow-lg px-6 py-3 rounded-full transition-all duration-300 ease-in-out">Home</a>
-                <a href="/About me" class="text-white font-semibold text-lg tracking-wider hover:bg-blue-700 hover:shadow-lg px-6 py-3 rounded-full transition-all duration-300 ease-in-out">About me</a>
-                <a href="/Contact" class="text-white font-semibold text-lg tracking-wider hover:bg-blue-700 hover:shadow-lg px-6 py-3 rounded-full transition-all duration-300 ease-in-out">Contact</a>
-                <a href="/Portfolio" class="text-white font-semibold text-lg tracking-wider hover:bg-blue-700 hover:shadow-lg px-6 py-3 rounded-full transition-all duration-300 ease-in-out">Portfolio</a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/About me">About me</a>
+                <a href="/Contact">Contact</a>
+                <a href="/Portfolio">Portfolio</a>
             </nav>
         </div>
     </header> 
 
-    <main class="flex-grow max-w-7xl mx-auto px-4 py-10 bg-white rounded-lg shadow-xl">
-        <h2 class="text-5xl font-bold mb-6 text-center text-gray-800">Connect with Me</h2>
-        <p class="text-lg mb-8 text-center text-gray-600">I’d love to hear from you! Connect with me on any of these platforms:</p>
+    <main>
+        <h2>Connect with Me</h2>
+        <p>I’d love to hear from you! Connect with me on any of these platforms:</p>
         
         <div class="flex justify-center space-x-8 mb-10">
-            <a href="https://www.facebook.com/allen.lavina" class="bg-blue-500 border border-blue-600 rounded-full p-4 shadow-lg hover:bg-blue-600 transform hover:scale-110 transition duration-300" target="_blank">
-                <i class="fab fa-facebook-f text-white text-4xl"></i> <!-- Font Awesome icon -->
+            <a href="https://www.facebook.com/allen.lavina" class="social-icon facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com/lav_nlla/profilecard/?igsh=MWlyczMyNnVvZmYxZw==" class="bg-gradient-to-r from-pink-500 to-pink-400 border border-pink-600 rounded-full p-4 shadow-lg hover:scale-110 transform transition duration-300" target="_blank">
-                <i class="fab fa-instagram text-white text-4xl"></i> <!-- Font Awesome icon -->
+            <a href="https://www.instagram.com/lav_nlla/profilecard/?igsh=MWlyczMyNnVvZmYxZw==" class="social-icon instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@lnellaaaaa" class="bg-black border border-gray-800 rounded-full p-4 shadow-lg hover:bg-gray-800 transform hover:scale-110 transition duration-300" target="_blank">
-                <i class="fab fa-tiktok text-white text-4xl"></i> <!-- Font Awesome icon -->
+            <a href="https://www.tiktok.com/@lnellaaaaa" class="social-icon tiktok" target="_blank">
+                <i class="fab fa-tiktok"></i>
             </a>
         </div>
         
-        <p class="text-center text-lg text-gray-600">Thank you for connecting! I look forward to hearing from you.</p>
+        <p>Thank you for connecting! I look forward to hearing from you.</p>
     </main>
 
-    <footer class="bg-blue-600 p-4 rounded-lg shadow-md mt-10">
-        <p class="text-center text-white text-sm">© 2024 Allen Jake Lavina. All rights reserved.</p>
+    <footer>
+        <p>© 2024 Allen Jake Lavina. All rights reserved.</p>
     </footer>
 </div>
+
+<style>
+    /* Header Styles */
+    header {
+        background: linear-gradient(to right, #1D4ED8, #3B82F6);
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .flex {
+        display: flex;
+        align-items: center;
+    }
+
+    header img {
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1rem;
+        border-radius: 50%;
+        border: 2px solid white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+        transform: scale(1.1);
+    }
+
+    nav {
+        display: flex;
+        gap: 3rem;
+    }
+
+    nav a {
+        color: white;
+        font-weight: 600;
+        font-size: 1.125rem;
+        letter-spacing: 0.05rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 9999px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #1D4ED8;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Main Section Styles */
+    main {
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 2.5rem;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        color: #2D3748;
+    }
+
+    p {
+        font-size: 1.125rem;
+        color: #4A5568;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* Social Icon Styles */
+    .social-icon {
+        background-color: #3B82F6;
+        border-radius: 50%;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+        transform: scale(1.1);
+    }
+
+    .social-icon i {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .facebook {
+        background-color: #3B82F6;
+    }
+
+    .facebook:hover {
+        background-color: #2563EB;
+    }
+
+    .instagram {
+        background: linear-gradient(to right, #D61C84, #EC4899);
+    }
+
+    .instagram:hover {
+        background: linear-gradient(to right, #9B1D5B, #9B1D5B);
+    }
+
+    .tiktok {
+        background-color: #000;
+    }
+
+    .tiktok:hover {
+        background-color: #333;
+    }
+
+    /* Footer Styles */
+    footer {
+        background-color: #1D4ED8;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 2rem;
+    }
+
+    footer p {
+        color: white;
+        text-align: center;
+        font-size: 0.875rem;
+    }
+</style>
